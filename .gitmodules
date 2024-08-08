@@ -1,0 +1,3 @@
+[submodule "assets/libs/Unity-developer-toolkit"]
+	path = assets/libs/Unity-developer-toolkit
+	url = https://github.com/LancelotOzerny/Unity-Developer-Toolkit.git
