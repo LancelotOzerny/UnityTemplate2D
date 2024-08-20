@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 137263498}
   - component: {fileID: 137263501}
   - component: {fileID: 137263500}
+  - component: {fileID: 137263502}
   m_Layer: 5
   m_Name: Red Circle
   m_TagString: Untagged
@@ -283,6 +284,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &137263502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137263496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   score: {fileID: 1640166751}
 --- !u!1 &361858497
 GameObject:
@@ -365,6 +378,7 @@ GameObject:
   - component: {fileID: 469647781}
   - component: {fileID: 469647784}
   - component: {fileID: 469647783}
+  - component: {fileID: 469647785}
   m_Layer: 5
   m_Name: Green Circle
   m_TagString: Untagged
@@ -476,6 +490,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &469647785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469647779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   score: {fileID: 1640166751}
 --- !u!1 &559484731
 GameObject:
@@ -490,6 +516,7 @@ GameObject:
   - component: {fileID: 559484733}
   - component: {fileID: 559484736}
   - component: {fileID: 559484735}
+  - component: {fileID: 559484737}
   m_Layer: 5
   m_Name: Blue Circle
   m_TagString: Untagged
@@ -599,6 +626,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &559484737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559484731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1640166751}

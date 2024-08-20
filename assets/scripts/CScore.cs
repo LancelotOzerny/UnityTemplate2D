@@ -16,6 +16,18 @@ public class CScore : MonoBehaviour
         text.text = score.ToString();
     }
 
+    public void Add(int value)
+    {
+        score += value;
+        text.text = score.ToString();
+    }
+
+    public void Decrement()
+    {
+        score--;
+        text.text = score.ToString();
+    }
+
     public void Increment()
     {
         score++;
