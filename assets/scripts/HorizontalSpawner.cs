@@ -45,7 +45,7 @@ public class HorizontalSpawner : MonoBehaviour
     {
         float width = rect.size.x - sidePaddings * 2;
         float posX = Random.Next(0, ((int)width * 100)) / 100;
-        float result = (posX + sidePaddings) - width / 2;
+        float result = posX - width / 2;
         return result;
     }
 }
