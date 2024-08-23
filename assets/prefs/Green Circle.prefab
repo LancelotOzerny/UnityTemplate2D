@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3966494893419865998}
   - component: {fileID: 1097712753828030133}
   - component: {fileID: -8447881152414427905}
-  - component: {fileID: 801199974941451922}
+  - component: {fileID: 5035032549545057234}
   m_Layer: 5
   m_Name: Green Circle
   m_TagString: shape
@@ -112,7 +112,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 60
---- !u!114 &801199974941451922
+--- !u!114 &5035032549545057234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9059956709480526611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
+  m_Script: {fileID: 11500000, guid: de8dfcaf9c21fd9419b4697221733028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeType: green
+  failSpeed: 5

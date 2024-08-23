@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class CShape : MonoBehaviour
 {
-    [SerializeField] private string shapeType = "white";
-    public string ShapeType { get { return shapeType; }}
+    protected string shapeType = "none";
+    public string ShapeType { get { return shapeType.ToLower(); }}
 
     [SerializeField] private float failSpeed = 5f;
+
+    public virtual bool IsSuitableColor(string color)
+    {
+        Debug.Log($"{color.ToLower()} != {this.ShapeType}");
+        return color.ToLower() == this.ShapeType;
+    }
 
     protected Vector2 CurrentPos
     {
@@ -13,7 +19,7 @@ public class CShape : MonoBehaviour
         set => transform.position = new Vector3(value.x, value.y, transform.position.z);
     }
 
-    private void Update()
+    protected void Update()
     {
         CurrentPos = new Vector3(CurrentPos.x, CurrentPos.y - failSpeed * Time.deltaTime);
     }

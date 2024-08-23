@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1251862438382062219}
   - component: {fileID: 3377942232881414019}
   - component: {fileID: 3385317107393565099}
-  - component: {fileID: -2313762040416406648}
+  - component: {fileID: 4924047696980928109}
   m_Layer: 5
   m_Name: Blue Circle
   m_TagString: shape
@@ -112,7 +112,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 60
---- !u!114 &-2313762040416406648
+--- !u!114 &4924047696980928109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8369881261069632964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7799ea550f2b5498d58fd575639f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeType: blue
+  failSpeed: 5

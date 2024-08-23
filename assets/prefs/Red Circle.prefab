@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3497516919992066122}
   - component: {fileID: 2754287949084382090}
   - component: {fileID: -7047579928549196596}
-  - component: {fileID: 3083560891637228654}
+  - component: {fileID: 1644455166656324889}
   m_Layer: 5
   m_Name: Red Circle
   m_TagString: shape
@@ -112,7 +112,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 60
---- !u!114 &3083560891637228654
+--- !u!114 &1644455166656324889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6845957085317868997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 641099ad4889348479456f8236d68da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeType: red
+  failSpeed: 5

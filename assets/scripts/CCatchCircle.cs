@@ -18,7 +18,9 @@ public class CCatchCircle : MonoBehaviour
     {
         if (collision.CompareTag("shape"))
         {
-            if (collision.GetComponent<CShape>().ShapeType == circleType)
+            CShape shape = collision.GetComponent<CShape>();
+
+            if (shape.IsSuitableColor(this.circleType))
             {
                 score.Add(shapeCount);
             }
