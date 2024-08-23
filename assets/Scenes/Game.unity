@@ -170,7 +170,6 @@ GameObject:
   - component: {fileID: 137263497}
   - component: {fileID: 137263499}
   - component: {fileID: 137263498}
-  - component: {fileID: 137263501}
   - component: {fileID: 137263500}
   - component: {fileID: 137263502}
   m_Layer: 5
@@ -272,18 +271,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 150
---- !u!114 &137263501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137263496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &137263502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleType: red
   score: {fileID: 1640166751}
+  lifes: 2
 --- !u!1 &361858497
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +365,6 @@ GameObject:
   - component: {fileID: 469647780}
   - component: {fileID: 469647782}
   - component: {fileID: 469647781}
-  - component: {fileID: 469647784}
   - component: {fileID: 469647783}
   - component: {fileID: 469647785}
   m_Layer: 5
@@ -478,18 +466,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 150
---- !u!114 &469647784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469647779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &469647785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +478,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleType: green
   score: {fileID: 1640166751}
+  lifes: 2
 --- !u!1 &559484731
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +492,6 @@ GameObject:
   - component: {fileID: 559484732}
   - component: {fileID: 559484734}
   - component: {fileID: 559484733}
-  - component: {fileID: 559484736}
   - component: {fileID: 559484735}
   - component: {fileID: 559484737}
   m_Layer: 5
@@ -616,18 +593,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 150
---- !u!114 &559484736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559484731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &559484737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cec0f214b496345a557c8751db1a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleType: blue
   score: {fileID: 1640166751}
+  lifes: 2
 --- !u!1 &807946147
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +799,7 @@ RectTransform:
   - {fileID: 115804447}
   - {fileID: 1509001592}
   - {fileID: 1844827820}
+  - {fileID: 1148251611}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1035,6 +1003,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133333296}
   m_CullTransparentMesh: 1
+--- !u!224 &1148251611 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+  m_PrefabInstance: {fileID: 1183108696}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1183108696
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 809093265}
+    m_Modifications:
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 288
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 336
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631729182074684626, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845957085317868997, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
+      propertyPath: m_Name
+      value: Red Circle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd0d74f5f1a495748ba9ec5d7e21bca8, type: 3}
 --- !u!1 &1509001591
 GameObject:
   m_ObjectHideFlags: 0

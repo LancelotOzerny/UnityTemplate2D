@@ -2,15 +2,37 @@ using UnityEngine;
 
 public class CCatchCircle : MonoBehaviour
 {
-    private static int shapeCount = 3;
+    [SerializeField] private string circleType = "white";
+
+    private static int shapeCount = 0;
     [SerializeField] private CScore score;
+
+    [SerializeField] private int lifes = 2;
+
+    void Awake()
+    {
+        CCatchCircle.shapeCount++;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("shape"))
         {
-            score.Add(shapeCount);
+            if (collision.GetComponent<CShape>().ShapeType == circleType)
+            {
+                score.Add(shapeCount);
+            }
+            else if (--lifes == 0)
+            {
+                Destroy(this.gameObject);
+            }
+
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        CCatchCircle.shapeCount--;
     }
 }

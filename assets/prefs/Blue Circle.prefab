@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2265099535794006294}
   - component: {fileID: 1251862438382062219}
   - component: {fileID: 3377942232881414019}
-  - component: {fileID: 2526362838292548069}
   - component: {fileID: 3385317107393565099}
+  - component: {fileID: -2313762040416406648}
   m_Layer: 5
   m_Name: Blue Circle
   m_TagString: shape
@@ -77,33 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!50 &2526362838292548069
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8369881261069632964}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &3385317107393565099
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +112,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 60
+--- !u!114 &-2313762040416406648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8369881261069632964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e01316cb2baa34f806dbaea0b0d9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeType: blue
