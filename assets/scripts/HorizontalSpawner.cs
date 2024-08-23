@@ -21,12 +21,15 @@ public class HorizontalSpawner : MonoBehaviour
 
     private void Update()
     {
-        time -= Time.deltaTime;
-
-        if (time <= 0)
+        if (Tools.Instance.isPause == false)
         {
-            time = timerTime;
-            Generate();
+            time -= Time.deltaTime;
+
+            if (time <= 0)
+            {
+                time = timerTime;
+                Generate();
+            }
         }
     }
 
@@ -37,8 +40,6 @@ public class HorizontalSpawner : MonoBehaviour
 
         RectTransform currentRect = newObj.GetComponent<RectTransform>();
         currentRect.localPosition = new Vector2(GetPositionX(), currentRect.localPosition.y);
-
-        Destroy(newObj, 3.0f);
     }
 
     private float GetPositionX()

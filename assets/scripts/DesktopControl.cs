@@ -6,9 +6,12 @@ public class DesktopControl : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = new Vector3(0, 0, -Input.GetAxisRaw("Horizontal"));
-        float angle = rotateSpeed * Time.deltaTime;
+        if (Tools.Instance.isPause == false)
+        {
+            Vector3 direction = new Vector3(0, 0, -Input.GetAxisRaw("Horizontal"));
+            float angle = rotateSpeed * Time.deltaTime;
 
-        transform.Rotate(direction, angle);
+            transform.Rotate(direction, angle);
+        }
     }
 }

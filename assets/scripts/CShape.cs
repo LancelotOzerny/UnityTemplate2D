@@ -20,6 +20,9 @@ public class CShape : MonoBehaviour
 
     protected void Update()
     {
-        CurrentPos = new Vector3(CurrentPos.x, CurrentPos.y - failSpeed * Time.deltaTime);
+        if (Tools.Instance.isPause == false)
+        {
+            CurrentPos = new Vector3(CurrentPos.x, CurrentPos.y - failSpeed * Time.deltaTime);
+        }
     }
 }
