@@ -7,9 +7,9 @@ public class Catcher : MonoBehaviour
 
     private static Catcher instance = null;
 
-    public Catcher() 
+    private void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
             Destroy(this);
             return;

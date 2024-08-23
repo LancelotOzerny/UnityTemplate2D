@@ -9,7 +9,6 @@ public class CShape : MonoBehaviour
 
     public virtual bool IsSuitableColor(string color)
     {
-        Debug.Log($"{color.ToLower()} != {this.ShapeType}");
         return color.ToLower() == this.ShapeType;
     }
 
