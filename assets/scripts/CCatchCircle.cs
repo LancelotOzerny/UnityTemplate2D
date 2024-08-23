@@ -35,6 +35,9 @@ public class CCatchCircle : MonoBehaviour
 
     private void OnDestroy()
     {
-        CCatchCircle.shapeCount--;
+        if (--CCatchCircle.shapeCount <= 0)
+        {
+            Catcher.Instance.InvokeLooseEvent();
+        }
     }
 }
