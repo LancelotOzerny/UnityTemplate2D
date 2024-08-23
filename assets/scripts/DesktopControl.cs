@@ -4,6 +4,14 @@ public class DesktopControl : MonoBehaviour
 {
     [SerializeField] private float rotateSpeed = 2.0f;
 
+    private void Awake()
+    {
+        if (Application.isMobilePlatform)
+        {
+            Destroy(this);
+        }
+    }
+
     void Update()
     {
         if (Tools.Instance.isPause == false)
